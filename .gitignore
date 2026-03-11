@@ -1,0 +1,7 @@
+.env
+.venv/
+.idea/
+.claude/
+__pycache__/
+*.pyc
+correlation_plots/

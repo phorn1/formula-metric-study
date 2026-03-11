@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compute LLM Scores",
+      "type": "process",
+      "command": "uv",
+      "args": ["run", "compute_llm_scores.py"]
+    },
+    {
+      "label": "Correlation Analysis",
+      "type": "process",
+      "command": "uv",
+      "args": ["run", "correlation_analysis.py"]
+    }
+  ]
+}

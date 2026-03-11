@@ -1,0 +1,21 @@
+[project]
+name = "formula-metric-study"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "python-dotenv",
+    "openai",
+    "pydantic",
+    "matplotlib>=3.10.8",
+    "seaborn",
+    "scipy>=1.17.0",
+    "scipy-stubs~=1.17.0",
+    "krippendorff>=0.8.2",
+]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+reportReturnType = "warning"
+reportArgumentType = "warning"
