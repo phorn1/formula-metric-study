@@ -2,6 +2,12 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Compute Metrics",
+      "type": "process",
+      "command": "uv",
+      "args": ["run", "compute_metrics.py"]
+    },
+    {
       "label": "Compute LLM Scores",
       "type": "process",
       "command": "uv",
