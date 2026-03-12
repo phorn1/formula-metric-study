@@ -238,11 +238,11 @@ def main():
     # Paper figure (selected metrics)
     paper_specs = [
         ("BLEU", "BLEU (Rule-based)", palette[0]),
-        ("Levenshtein", "Levenshtein (Rule-based)", palette[1]),
-        ("CDM", "CDM (Rule-based)", palette[2]),
-        ("LLM: gpt-5", "GPT-5 (LLM-as-a-Judge)", palette[3]),
-        ("LLM: gemini-2.5-flash", "Gemini-2.5-Flash (LLM-as-a-Judge)", palette[4]),
-        ("LLM: gpt-5.4", "GPT-5.4 (LLM-as-a-Judge)", palette[6]),
+        ("LLM: gemini-3.1-flash-lite-preview", "Gemini-3.1-Flash-Lite (LLM-as-a-Judge)", palette[1]),
+        ("Levenshtein", "Levenshtein (Rule-based)", palette[2]),
+        ("LLM: gemini-3-flash-preview", "Gemini-3-Flash (LLM-as-a-Judge)", palette[3]),
+        ("CDM", "CDM (Rule-based)", palette[4]),
+        ("LLM: gpt-5-mini", "GPT-5-Mini (LLM-as-a-Judge)", palette[6]),
     ]
     make_figure(metrics, all_correlations, paper_specs,
                 OUTPUT_DIR / "correlation.png")
