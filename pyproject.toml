@@ -13,6 +13,9 @@ dependencies = [
     "scipy>=1.17.0",
     "scipy-stubs~=1.17.0",
     "krippendorff>=0.8.2",
+    "python-Levenshtein",
+    "nltk",
+    "requests",
 ]
 
 [tool.pyright]
