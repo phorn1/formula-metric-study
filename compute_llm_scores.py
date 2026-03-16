@@ -13,7 +13,7 @@ from openai import OpenAI
 load_dotenv()
 
 DATA_PATH = Path(__file__).parent / "all_formulas.json"
-MODEL = "google/gemini-3-flash-preview"
+MODEL = "openai/gpt-5.4"
 MAX_WORKERS = 8
 MAX_RETRIES = 10
 

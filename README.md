@@ -14,18 +14,20 @@ The dataset includes 750 human quality ratings on 250 formula pairs from 30 eval
 
 Correlation of each metric with the averaged human scores (three annotators per formula pair):
 
-| Metric | Pearson r | Spearman ρ | Kendall τ |
-|--------|----------:|-----------:|----------:|
-| BLEU | 0.014 | 0.031 | 0.027 |
-| Levenshtein | -0.154 | -0.157 | -0.113 |
-| CDM | 0.305 | 0.438 | 0.323 |
-| LLM: gemini-2.5-flash | 0.688 | 0.771 | 0.617 |
-| LLM: gemini-3-flash-preview | 0.775 | 0.803 | 0.659 |
-| LLM: gemini-3.1-flash-lite-preview | 0.764 | 0.794 | 0.635 |
-| LLM: gpt-5 | 0.784 | 0.796 | 0.638 |
-| LLM: gpt-5-mini | 0.777 | 0.794 | 0.639 |
-| LLM: gpt-5.2 | 0.786 | 0.799 | 0.640 |
-| LLM: gpt-5.4 | 0.733 | 0.740 | 0.581 |
+| Metric | Pearson r | Spearman ρ | Kendall τ | API Cost |
+|--------|----------:|-----------:|----------:|---------:|
+| BLEU | 0.014 | 0.031 | 0.027 | — |
+| Levenshtein | -0.154 | -0.157 | -0.113 | — |
+| CDM | 0.305 | 0.438 | 0.323 | — |
+| LLM: gemini-2.5-flash | 0.743 | 0.802 | 0.651 | $0.02 |
+| LLM: gemini-3-flash-preview | 0.775 | 0.803 | 0.659 | $0.03 |
+| LLM: gemini-3.1-flash-lite-preview | 0.764 | 0.794 | 0.635 | $0.02 |
+| LLM: gpt-5 | 0.818 | 0.820 | 0.660 | $1.10 |
+| LLM: gpt-5-mini | 0.777 | 0.794 | 0.639 | $0.21 |
+| LLM: gpt-5.2 | 0.794 | 0.792 | 0.622 | $0.47 |
+| LLM: gpt-5.4 | 0.751 | 0.764 | 0.610 | $0.18 |
+
+API costs are for scoring all 250 formula pairs via [OpenRouter](https://openrouter.ai/) (as of March 2026).
 
 ## Project Structure
 
